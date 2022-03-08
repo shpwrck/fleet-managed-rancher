@@ -10,4 +10,4 @@ helm:
     letsEncrypt:
       email: jason.skrzypek@suse.com
     auditLog:
-      level: 1
+      level: 0 
