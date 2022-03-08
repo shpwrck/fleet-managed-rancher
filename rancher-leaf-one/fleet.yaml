@@ -9,3 +9,5 @@ helm:
       tls.source: letsEncrypt
     letsEncrypt:
       email: jason.skrzypek@suse.com
+    auditLog:
+      level: 1
