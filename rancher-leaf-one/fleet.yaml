@@ -1,4 +1,4 @@
-namespace: cattle-system
+defaultNamespace: cattle-system
 helm:
   chart: rancher
   repo: https://releases.rancher.com/server-charts/latest
