@@ -1,0 +1,12 @@
+namespace: cattle-system
+helm:
+  repo: https://releases.rancher.com/server-charts/latest
+  releaseName: rancher
+  values:
+    hostname: leaf-one.skrzypek.us
+    ingress:
+      tls.source: letsEncrypt
+    letsEncrypt:
+      email: jason.skrzypek@suse.com
+dependson:
+  - name: cert-manager-cert-manager
