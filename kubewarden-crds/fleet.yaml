@@ -1,0 +1,5 @@
+defaultNamespace: kubewarden
+helm:
+  chart: kubewarden-crds
+  repo: https://charts.kubewarden.io
+  releaseName: kubewarden-crds
