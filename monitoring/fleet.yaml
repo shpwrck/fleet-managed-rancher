@@ -1,0 +1,17 @@
+defaultNamespace: cattle-monitoring-system
+helm:
+  releaseName: rancher-monitoring
+  repo: https://charts.rancher.io
+  chart: rancher-monitoring
+  version: 14.5.100
+  values:
+    grafana:
+      additionalDataSources:
+        - name: "loki"
+          type: "loki"
+          url: "http://loki.loki.svc:3100"
+    prometheusOperator:
+      prometheusSpec:
+        resources:
+          requests:
+            cpu: 10m
