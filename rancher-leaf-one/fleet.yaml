@@ -8,5 +8,3 @@ helm:
       tls.source: letsEncrypt
     letsEncrypt:
       email: jason.skrzypek@suse.com
-dependsOn:
-  - name: cert-manager-cert-manager
